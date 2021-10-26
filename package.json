@@ -1,0 +1,27 @@
+{
+  "name": "project-apis",
+  "version": "1.0.0",
+  "description": "repository for projects and tests",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonardo-KF/project-apis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leonardo-KF/project-apis/issues"
+  },
+  "homepage": "https://github.com/Leonardo-KF/project-apis#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
