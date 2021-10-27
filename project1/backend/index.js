@@ -49,12 +49,6 @@ app.get("/", (req, res) => {
   res.send(carros);
 });
 
-app.get("/carros/:id", (req, res) => {
-  const id = req.params.id;
-  const cars = carros.find((carros) => carros.id == id);
-  res.send(cars);
-});
-
 app.post("/cadastro", (req, res) => {
   const { marca, modelo, ano } = req.body;
   const car = {
