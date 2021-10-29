@@ -2,6 +2,14 @@ main {
   margin-top: 20px;
 }
 
+#cadastro {
+  display: none;
+}
+
 #model-car {
   padding: solid 3px;
+}
+
+#lista {
+  padding-top: 10px;
 }

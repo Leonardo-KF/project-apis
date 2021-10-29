@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./cadastro.html">Cadastrar Veiculo</a>
+                    <a class="nav-link active" aria-current="page" href="" id="bar-cadastro">Cadastrar Veiculo</a>
                 </li>
                 </ul>
             </div>
@@ -29,7 +29,55 @@
         </nav>
     </header>
     <main class="container">
+        <section id="cadastro">
+            <form onsubmit="submitForm(event)">
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="modelo" placeholder="Digite o Modelo">
+                            <label for="Modelo">Modelo</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="marca" placeholder="Digite a Marca">
+                            <label for="Marca">Marca</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="carro" placeholder="Digite a url da imagem do carro">
+                            <label for="carro">Imagem do carro</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="ano" placeholder="Digite o ano">
+                            <label for="ano">Ano</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Digite a descricao" id="descricao"></textarea>
+                            <label for="descricao">Descricao</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn btn-success" type="submit" method="post">Enviar</button>
+                            <button class="btn btn-outline-danger" type="button" id="cancelar">cancelar</button>
+                          </div>
+                    </div>
+                </div>
+            </form>
+        </section>
         <div class="row row-cols-1 row-cols-md-2 g-4" id="lista">
+        </div>
+        <div class="modal-dialog modal-lg" id="cm">
         </div>
     </main>
 </body>

@@ -67,6 +67,11 @@ app.post("/cadastro", (req, res) => {
   res.send(carros);
 });
 
+app.get("/:id", (req, res) => {
+  const id = req.params.id;
+  res.send(carros[id]);
+});
+
 app.put("/update/:id", (req, res) => {
   const id = req.params.id;
   const { marca, modelo, ano } = req.body;
